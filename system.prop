@@ -21,5 +21,9 @@ debug.nfc.se=true
 ro.nfc.port=I2C
 
 # UMS
-persist.sys.usb.config=mass_storage,adb
+persist.sys.usb.config=mtp
 ro.vold.umsdirtyratio=40
+
+# Recovery
+ro.cwm.forbid_format=/firmware_radio,/firmware_q6,/devlog
+ro.cwm.forbid_mount=/firmware_radio,/firmware_q6,/devlog
